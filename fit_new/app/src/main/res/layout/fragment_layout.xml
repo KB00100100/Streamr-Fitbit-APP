@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.connect.ConnectActivity">
+    <com.fs.fitbitstreamr.ui.view.CirclePercentView
+        android:id="@+id/cp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:circleBgColor="@color/gress4"
+        app:circleIsGradient="false"
+        app:circleProgressColor="@color/gress5"
+        app:circleRadius="5" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cp"
+        android:layout_alignBottom="@+id/cp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLOORS"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_1"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:text="This Fitbit data will be available at the Streamr Marketplace whrer your data will become part of the Fitbit Data Union."
+        android:textColor="#DFDFDF"
+        android:textSize="14sp" />
+</RelativeLayout>

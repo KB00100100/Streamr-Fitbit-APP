@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.SettingActivity">
+
+    <include layout="@layout/common_toolbar" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputLayoutStyle"
+        android:id="@+id/input1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#6220EA"
+        android:layout_below="@+id/common_toolbar"
+        android:theme="@style/InputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_stream_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Stream ID"
+            android:padding="15dp"
+            android:textColor="#6220EA"
+            android:textSize="16sp"
+            android:theme="@style/InputLayoutStyle" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputLayoutStyle"
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#6220EA"
+        android:layout_below="@+id/input1"
+        android:theme="@style/InputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Key"
+            android:padding="15dp"
+            android:textColor="#6220EA"
+            android:textSize="16sp"
+            android:theme="@style/InputLayoutStyle" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/btn_stream"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="STREAM TO MARKETPLACE"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_sure"
+    android:gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:textSize="18sp"
+    android:layout_marginTop="20dp"
+    android:textColor="#CACACA"
+    android:text="Set your Stream ID and private Key from your Streamr profile."/>
+    <Button
+        android:id="@+id/btn_wallet"
+        android:layout_below="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_per"
+        android:layout_marginBottom="40dp"
+        android:text="WALLET" />
+    <Button
+        android:id="@+id/btn_personal"
+        android:layout_above="@+id/btn_wallet"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_green"
+        android:layout_marginBottom="10dp"
+        android:text="PERSONALINFORMATION" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/btn_personal"
+        android:layout_marginBottom="30dp"
+        android:background="#F2F2F2"/>
+</RelativeLayout>

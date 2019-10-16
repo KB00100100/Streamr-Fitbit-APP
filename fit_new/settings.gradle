@@ -1,0 +1,2 @@
+include ':app', ':fitbitcommon', ':fitbitauth'
+rootProject.name='FitbitStreamr'
